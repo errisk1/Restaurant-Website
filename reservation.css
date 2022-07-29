@@ -1,0 +1,140 @@
+body{
+    color: #494D68;
+    background-color: #84889C;
+    font-family: Calibri;
+    width: 100%;
+  }
+  
+  figure{
+    margin: 0px;
+  }
+  
+  p{
+    margin: 8px 32px;  
+  }
+  
+  textarea{
+    margin: 8px 32px;
+  }
+  
+  input[type="submit"]{
+    color: #F7ECEB;
+    background-color: #545871;
+    width: 104px;
+    height: 32px;
+    border-style: none;
+    border-radius: 24px; 
+    margin: 24px 88px;
+  }
+  
+  .table{
+    display: table;
+    border-collapse:colapse;
+    margin: auto;
+  }
+  
+  .table-row{
+    display: table-row;
+  }
+  
+  .left-cell{
+    display: table-cell;
+    max-width: 352px;
+    background-color: #545871;
+    border-radius: 24px 0px 0px 24px;
+    overflow: hidden;
+  }
+  
+  .right-cell{
+    display: table-cell;
+    max-width: 520px;
+    background-color: #F7ECEB;
+    border-radius: 0px 24px 24px 0px;
+    overflow: hidden;
+  }
+  
+  .white-area{
+    background-color: #fff;
+    text-align: center;
+    height: 88px;
+    width: 520px;
+  }
+  
+  .left-title{
+    color: #F7ECEB;
+    font-size: 32px;
+    text-align: center; 
+  }
+  
+  .right-title{
+    color: #545871;
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  .input-a{
+    width: 136px;
+    margin: 8px 32px;
+  }
+  
+  .input-b{
+    margin: 8px;
+  }
+  
+  .radio-checkbox{
+    margin: 8px 32px;
+  }
+  
+  /* Media Queries */
+  
+  /* The entire website would need to be restructured in order to work properly. What follows is a somewhat successful attempt to resize SOME of the elements */
+  
+  /* Phones */
+  @media(max-width: 360px){
+    body, ::placeholder{
+      font-size: 10px;    
+    }
+    
+    input[type="radio"], [type="checkbox"]{
+      width: 30%; 
+      height: 1em;
+  }
+    
+    span{
+      font-size: 5px;
+    }
+    
+    input[type="range"]{
+      padding: 0px;
+      width: 1em;
+    }
+    
+    textarea{
+      width: 9em;
+      height: 5em;
+    }
+    
+    input[type="submit"]{
+      display: block;
+      margin: 10em;
+      width: 52px;
+      height: 16px;
+      font-size: 10px;
+    }
+   
+    .left-cell{
+      max-width: 125px;
+    }
+    
+    .right-cell{
+      max-width: 180px;
+    }
+    
+    .left-title, .right-title{
+      font-size: 12px;
+    }
+    
+    .input-a{
+      width: 100px;
+    }
+  }

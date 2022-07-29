@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap'); 
+  
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.class {
+    background-color:none;
+}
+  
+.nav-flex-row { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    position: absolute; 
+    z-index: 100; 
+    left: 0; 
+    width: 90%; 
+    padding: 0; 
+} 
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  div#filters {
+    display: none;
+}
+
+.nav-flex-row li { 
+    text-decoration: none; 
+    list-style-type: none; 
+    padding: 20px 15px; 
+} 
+  
+.nav-flex-row li a { 
+    font-family: 'Big Shoulders Text', cursive; 
+    color: #000; 
+    font-size: 1.5em; 
+    text-transform: uppercase; 
+    font-weight: 300; 
+} 
+.nav-flex-row li a:hover{ 
+    background: #E7E7E7; 
+} 
+  
+.section-intro { 
+    height: 750px; 
+    background-image: url(img/pasta.png); 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+} 
+  
+.section-intro h1 { 
+    text-align: center; 
+    color: #000; 
+    font-size: 7em; 
+    font-weight: 300; 
+} 
+  
+.section-intro header { 
+    display: flex; 
+    flex: 7; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+} 
+  
+.link-to-book-wrapper { 
+    flex: 1; 
+} 
+  
+.about-section { 
+    display: flex; 
+    align-items: center; 
+    background-color: #f3f3f3c0; 
+    padding: 50px 30px; 
+} 
+  
+.link-to-book { 
+    color: #ffffff; 
+    display: block; 
+    border: 2px solid #ffffff; 
+    padding: 5px 10px; 
+} 
+  
+a.link-to-book:hover { 
+    background-color: #ffffff; 
+    color: #696d72; 
+    text-decoration: none; 
+} 
+  
+.about-section p, 
+.about-section h3 { 
+    text-align: center; 
+    width: 60%; 
+    margin: auto; 
+    font-family: 'Big Shoulders Text', cursive; 
+    font-size: 2.0em; 
+    text-transform: uppercase; 
+} 
+  
+.carousel-inner { 
+    height: 700px; 
+} 
+  
+.row-flex { 
+    display: flex; 
+    flex-direction: row; 
+} 
+  
+.flex-column-form { 
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+    margin: 30px 20px; 
+} 
+  
+.btn.btn-primary { 
+    font-family: 'Big Shoulders Text', cursive; 
+    color: #ffffff; 
+    background-color: #95999e; 
+    text-transform: uppercase; 
+    font-size: 16px; 
+    padding: 5px 10px; 
+    letter-spacing: 2px; 
+    border: 0; 
+} 
+  
+.btn.btn-primary:hover { 
+    background-color: #747474; 
+} 
+.opening-time, 
+.contact-adress { 
+    flex: 1; 
+    margin: 30px 20px; 
+    font-size: 1.2em; 
+} 
+  
+.form-group p { 
+    font-size: 1.2em; 
+} 
+  
+.opening-time p span, 
+.contact-adress p span { 
+    display: block; 
+} 
+  
+@media (min-width:577px) and (max-width: 800px) { 
+  
+    .section-intro { 
+        height: 500px; 
+    } 
+  
+    .about-section p, 
+    .about-section h3 { 
+        font-size: 20px; 
+    } 
+  
+    .carousel-inner { 
+        height: auto; 
+    } 
+  
+    .row-flex { 
+        display: flex; 
+        flex-direction: column; 
+    } 
+} 
+  
+@media screen and (max-width: 576px) { 
+    .section-intro { 
+        height: 300px; 
+    } 
+  
+    .about-section { 
+        padding: 30px; 
+    } 
+  
+    .section-intro h1 { 
+        font-size: 2em; 
+    } 
+  
+    .about-section p, 
+    .about-section h3 { 
+        font-size: 15px; 
+    } 
+  
+    .carousel-inner { 
+        height: auto; 
+    } 
+  
+    .row-flex { 
+        display: flex; 
+        flex-direction: column; 
+    } 
+  
+    .row-flex h3 { 
+        font-size: 25px; 
+        text-align: left; 
+    } 
+  
+    .form-group p { 
+        font-size: 15px; 
+    } 
+  
+    .opening-time p span, 
+    .contact-adress p span { 
+        font-size: 15px; 
+        text-align: left; 
+    } 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+      
+} 
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("card-img.jpg") center/cover no-repeat;  
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
